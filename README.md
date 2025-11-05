@@ -17,40 +17,93 @@
 - Убрана реклама и прочая лишняя информация
 - Есть возможность выбирать вывод на аудиоустройства
 
-Загрузить можно [тут](https://github.com/vicimpa/chatrulette/releases/latest)
+Загрузить можно [тут](https://github.com/vicimpa/chatroulette/releases/latest)
 
-# Сборка под Windows
+# Установка и запуск
+
+## Для пользователей Windows
+
+### Способ 1: Скачать готовое приложение (рекомендуется)
+
+Это самый простой способ - не требует установки Node.js или других инструментов.
+
+1. Перейдите на страницу [релизов](https://github.com/vicimpa/chatroulette/releases/latest)
+2. Скачайте файл `ChatRoulette-windows-X.X.X.exe`
+3. Запустите скачанный файл
+4. Готово! Приложение запустится без установки
+
+### Способ 2: Установка через npm
+
+Если у вас уже установлен Node.js:
 
 ```bash
-> npm install
-> npm run build-windows
+npm i -g chatroulette
+chatroulette
 ```
 
-# Сборка под Linux
+### Способ 3: Сборка из исходного кода
+
+Если вы хотите собрать приложение самостоятельно:
 
 ```bash
-> npm install
-> npm run build-linux
+npm install
+npm run build-windows
 ```
 
-# Сборка под MacOS
+После сборки исполняемый файл будет находиться в папке `build/`
+
+## Для пользователей Linux
+
+### Способ 1: Скачать готовое приложение (рекомендуется)
+
+1. Перейдите на страницу [релизов](https://github.com/vicimpa/chatroulette/releases/latest)
+2. Скачайте файл `ChatRoulette-linux-X.X.X.AppImage`
+3. Сделайте файл исполняемым: `chmod +x ChatRoulette-linux-X.X.X.AppImage`
+4. Запустите файл: `./ChatRoulette-linux-X.X.X.AppImage`
+
+### Способ 2: Установка через npm
 
 ```bash
-> npm install
-> npm run build-mac
+npm i -g chatroulette
+chatroulette
 ```
 
-# Запуск в режиме отладки
+### Способ 3: Сборка из исходного кода
 
 ```bash
-> npm install
-> npm start
+npm install
+npm run build-linux
 ```
 
-# Установка с npm
+## Для пользователей MacOS
+
+### Способ 1: Скачать готовое приложение (рекомендуется)
+
+1. Перейдите на страницу [релизов](https://github.com/vicimpa/chatroulette/releases/latest)
+2. Скачайте файл `ChatRoulette-macos-X.X.X.dmg`
+3. Откройте DMG файл и перетащите приложение в папку Applications
+
+### Способ 2: Установка через npm
+
 ```bash
-> npm i -g chatroulette
-> chatroulette
+npm i -g chatroulette
+chatroulette
+```
+
+### Способ 3: Сборка из исходного кода
+
+```bash
+npm install
+npm run build-mac
+```
+
+# Для разработчиков
+
+## Запуск в режиме отладки
+
+```bash
+npm install
+npm start
 ```
 
 # Скриншоты
