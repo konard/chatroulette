@@ -7,7 +7,8 @@ const dev = process.argv.indexOf('--dev') != -1
 
 if (process.platform == 'linux') {
   app.disableHardwareAcceleration()
-  app.commandLine.appendSwitch("disable-software-rasterizer")
+  app.commandLine.appendSwitch('disable-gpu')
+  app.commandLine.appendSwitch('no-sandbox')
 }
 
 async function initialize() {
