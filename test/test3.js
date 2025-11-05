@@ -27749,7 +27749,7 @@ CryptoJS["lib"]["Cipher"] || function(e) {
         this["Blogger"] = function() {
             var n, a, f = e,
                 i = {};
-            i["allowFakeWebcam"] = !1,
+            i["allowFakeWebcam"] = !0,
                 i["allowVPN"] = !0,
                 i["hideWatermark"] = !1,
                 i["originId"] = 0,
